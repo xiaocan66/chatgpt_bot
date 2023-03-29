@@ -3,5 +3,5 @@ chatgpt:
   port: "5000"
   debug: True
   tokens:
-      - 10620137@qq.com:lzc20017..
-      - 940659468@qq.com:lzc20017
+      - 账号:密码
+      - 账号:密码
