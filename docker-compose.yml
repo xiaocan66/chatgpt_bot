@@ -1,0 +1,34 @@
+version: '3'
+
+
+services:
+
+  client:
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+    build:
+      context: .
+      dockerfile: client/Dockerfile
+    container_name: BotClient
+    restart: always
+    ports:
+      - 8070:8070
+    depends_on:
+      - engine
+
+  engine:
+
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+    build:
+      context: .
+      dockerfile: chat_gpt/Dockerfile
+
+    container_name: BotEngine
+
+    ports:
+      - 5000:5000
