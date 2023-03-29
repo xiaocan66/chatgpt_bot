@@ -1,0 +1,15 @@
+bot:
+  type: wxoc  #wechat ,telegram ,wxoc  
+  # telegram:
+  #    token: your bot token
+  #    channelName:
+  #    groupName: @your group name
+  wxoc:
+    appid: ''
+    app_secret: ''
+    port: ':8070' # 必须带':'
+
+engine:
+  host: engine
+  port: 5000
+  type: chatgpt

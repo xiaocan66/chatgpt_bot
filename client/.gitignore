@@ -8,5 +8,3 @@ venv
 run-wechatbot
 run-telegrambot
 cookie.json
-config.yaml
-chatgpt-bot
